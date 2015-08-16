@@ -1,0 +1,64 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$fallback-font: Helvetica, Arial, sans-serif;
+$header-font-family: "freight-sans-pro", fallback-font;
+$body-font-family: "freight-text-pro", $fallback-font;
+$base-font-size: 16px;
+$base-line-height: 1.5;
+
+$purple: rgb(95, 22, 255);
+$crazy-start: rgb(243, 125, 141);
+$crazy-end: rgb(241, 177, 138);
+
+$text-color: rgb(34, 34, 34);
+$link-color: $purple;
+
+p, h1, body, html {
+  margin: 0;
+  padding: 0;
+}
+
+// base style
+body {
+  background-image: linear-gradient($crazy-start, $crazy-end);
+  background: linear-gradient($crazy-start, $crazy-end);
+  color: $text-color;
+  font-family: $body-font-family;
+}
+
+// layout
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.about {
+  max-width: 80%;
+  width: 400px;
+  margin: auto;
+  padding: 1rem;
+}
+
+// type
+h1, h2, h3, h4, h5, h6 {
+  font-size: 3rem;
+  font-family: $header-font-family;
+  color: $purple;
+}
+
+p, li, ol {
+  margin-top: 1.3rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: $link-color;
+  border-bottom: 1px solid $link-color;
+}
