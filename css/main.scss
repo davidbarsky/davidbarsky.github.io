@@ -12,14 +12,10 @@ $base-line-height: 1.5;
 // colors
 $text-color: white;
 $link-color: white;
-$violet: rgb(72, 38, 153);
-$magenta: rgb(248, 127, 127);
-$virgin-purple: #7b4397;
-$virgin-red: #dc2430;
-$spoon-purple: #564688;
-$spoon-blue: #4d608d;
+$violet: #5927ec;
+$orange: #ff9669;
 
-$background-gradient: linear-gradient($violet 0%, $magenta 100%);
+$background-gradient: linear-gradient($violet 0%, $orange 100%);
 $base-background-color: #01161B;
 
 html, p, h1, body {
