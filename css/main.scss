@@ -9,7 +9,6 @@ $body-font-family: "freight-text-pro", $fallback-font;
 $base-font-size: 16px;
 $base-line-height: 1.5;
 
-
 // colors
 $text-color: white;
 $link-color: white;
@@ -31,7 +30,7 @@ html, p, h1, body {
 // base style
 body {
   color: $text-color;
-  font-family: $body-font-family;
+  font-family: $body-font-family, $fallback-font;
 
   -webkit-background-clip: border-box;
   -webkit-background-origin: padding-box;
@@ -62,7 +61,7 @@ body {
 // type
 h1, h2, h3, h4, h5, h6 {
   font-size: 3rem;
-  font-family: $header-font-family;
+  font-family: $header-font-family, $fallback-font;
 }
 
 p, li, ol {
