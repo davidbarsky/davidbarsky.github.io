@@ -9,14 +9,18 @@ $body-font-family: "freight-text-pro", $fallback-font;
 $base-font-size: 16px;
 $base-line-height: 1.5;
 
-$blue: #6993FD;
-$purple: #B469FD;
-$pseudo-purple: #A277FB;
-$crazy-start: rgb(229, 98, 151);
-$crazy-end: rgb(255, 116, 71);
-$text-color: rgb(173, 177, 183);
-$link-color: $purple;
-$header-gradient: -webkit-linear-gradient($blue, $purple);
+
+// colors
+$text-color: white;
+$link-color: white;
+$violet: rgb(72, 38, 153);
+$magenta: rgb(248, 127, 127);
+$virgin-purple: #7b4397;
+$virgin-red: #dc2430;
+$spoon-purple: #564688;
+$spoon-blue: #4d608d;
+
+$background-gradient: linear-gradient($violet 0%, $magenta 100%);
 $base-background-color: #01161B;
 
 html, p, h1, body {
@@ -26,10 +30,19 @@ html, p, h1, body {
 
 // base style
 body {
-  height: 98vh;
   color: $text-color;
-  background-color: $base-background-color;
   font-family: $body-font-family;
+
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: $background-gradient;
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 // layout
@@ -50,9 +63,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-size: 3rem;
   font-family: $header-font-family;
-  background: $header-gradient;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 p, li, ol {
@@ -63,10 +73,10 @@ p, li, ol {
 }
 
 a {
-  color: $blue;
+  color: $link-color;
 
   // custom underline
   text-decoration: none;
   border-bottom: 1px solid;
-  border-color: $blue;
+  border-color: $link-color;
 }
