@@ -3,20 +3,16 @@
 ---
 @charset "utf-8";
 
-$fallback-font: Helvetica, Arial, sans-serif;
-$header-font-family: "freight-sans-pro", fallback-font;
+$fallback-font: "Georgia", sans-serif;
 $body-font-family: "freight-text-pro", $fallback-font;
 $base-font-size: 16px;
 $base-line-height: 1.5;
 
 // colors
-$text-color: white;
-$link-color: white;
-$violet: rgb(73, 3, 174);
-$orange: rgb(255, 156, 139);
+$text-color: #222222;
+$link-color: #f04c24;
 
-$background-gradient: linear-gradient($violet 0%, $orange 100%);
-$base-background-color: #01161B;
+$base-background-color: #f8f7f3;
 
 html, p, h1, body {
   margin: 0;
@@ -34,9 +30,7 @@ body {
   -webkit-background-origin: padding-box;
   -webkit-background-size: auto;
   background-attachment: fixed;
-  background-clip: border-box;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: $background-gradient;
+  background-color: $base-background-color;
   background-origin: padding-box;
   background-repeat: no-repeat;
   background-size: auto;
@@ -51,19 +45,23 @@ body {
 
 .about {
   max-width: 90%;
-  width: 400px;
+  width: 500px;
   margin: auto;
   padding-top: 5vh;
   padding-bottom: 10vh;
 }
 
-// type
-h1, h2, h3, h4, h5, h6 {
-  font-size: 3rem;
-  font-family: $header-font-family;
+.primary {
+  font-size: 2rem;
 }
 
-p, li, ol {
+@media (max-width: 375px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+p {
   margin-top: 1.3rem;
   font-size: 1.3rem;
   font-weight: 300;
