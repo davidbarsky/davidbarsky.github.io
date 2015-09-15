@@ -7,10 +7,9 @@ $fallback-font: "Georgia", sans-serif;
 $body-font-family: "freight-text-pro", $fallback-font;
 
 // colors
-$foreground-color: #f8f8f7;
-$background-color: #6a5acd;
-$text-color: #7d7a75;
-$link-color: lighten($background-color, 10%);
+$background-color: rgb(253, 253, 253);
+$text-color: rgb(34, 34, 34);
+$link-color: rgb(237, 109, 81);
 
 html, body {
   height: 100%;
@@ -35,22 +34,7 @@ body {
   margin: auto;
   padding: 2em;
   padding-bottom: 3em;
-  background-color: $foreground-color;
-  box-shadow: 10px 10px darken($background-color, 20%);
-  border-radius: 5px;
 }
-
-@media (max-width: 420px) {
-  .about {
-    border-radius: none;
-    box-shadow: none;
-  }
-
-  body {
-    background-color: $foreground-color;
-  }
-}
-
 .primary {
   font-size: 2.5rem;
   line-height: 1.3;
