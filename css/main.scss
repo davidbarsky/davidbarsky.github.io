@@ -5,18 +5,14 @@
 
 $fallback-font: "Georgia", sans-serif;
 $body-font-family: "freight-text-pro", $fallback-font;
-$base-font-size: 16px;
-$base-line-height: 1.5;
 
 // colors
-$text-color: #222222;
-$link-color: #f04c24;
+$foreground-color: #f8f8f7;
+$background-color: #6a5acd;
+$text-color: #7d7a75;
+$link-color: lighten($background-color, 10%);
 
-$base-background-color: #f8f7f3;
-
-html, p, h1, body {
-  margin: 0;
-  padding: 0;
+html, body {
   height: 100%;
 }
 
@@ -24,16 +20,7 @@ html, p, h1, body {
 body {
   color: $text-color;
   font-family: $body-font-family;
-  height: 100%;
-
-  -webkit-background-clip: border-box;
-  -webkit-background-origin: padding-box;
-  -webkit-background-size: auto;
-  background-attachment: fixed;
-  background-color: $base-background-color;
-  background-origin: padding-box;
-  background-repeat: no-repeat;
-  background-size: auto;
+  background-color: $background-color;
 }
 
 // layout
@@ -44,36 +31,54 @@ body {
 }
 
 .about {
-  max-width: 90%;
   width: 500px;
   margin: auto;
-  padding-top: 5vh;
-  padding-bottom: 10vh;
+  padding: 2em;
+  padding-bottom: 3em;
+  background-color: $foreground-color;
+  box-shadow: 10px 10px darken($background-color, 20%);
+  border-radius: 5px;
+}
+
+@media (max-width: 420px) {
+  .about {
+    border-radius: none;
+    box-shadow: none;
+  }
+
+  body {
+    background-color: $foreground-color;
+  }
 }
 
 .primary {
-  font-size: 2rem;
-  line-height: 1.2;
+  font-size: 2.5rem;
+  line-height: 1.3;
+  font-style: italic;
 }
 
 @media (max-width: 375px) {
   html {
     font-size: 80%;
   }
+
+  .primary {
+    font-size: 2rem;
+  }
+}
+
+
+h1, p {
+  margin: none;
+  padding: none;
 }
 
 p {
-  margin-top: 1.3rem;
   font-size: 1.3rem;
   font-weight: 300;
   line-height: 1.4;
 }
 
-a {
+a, a:visited {
   color: $link-color;
-
-  // custom underline
-  text-decoration: none;
-  border-bottom: 1px solid;
-  border-color: $link-color;
 }
