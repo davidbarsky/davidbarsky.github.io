@@ -7,14 +7,12 @@ $fallback-font: "Georgia", sans-serif;
 $body-font-family: "freight-text-pro", $fallback-font;
 
 // colors
-$background-color: rgb(253, 253, 253);
-$text-color: rgb(34, 34, 34);
-$link-color: rgb(237, 109, 81);
+$background-color: rgb(255, 255, 255);
+$text-color: rgb(0, 31, 102);
+$link-color: rgb(242, 29, 29);
 
 html {
   height: 100%;
-  border-top: solid 4px;
-  border-color: $link-color;
 }
 
 // base style
