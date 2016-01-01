@@ -8,7 +8,7 @@ $body-font-family: "proxima-nova", -apple-system, sans-serif;
 // colors
 $background-color: #fafafa;
 $text-color: #363636;
-$link-color: lighten($text-color, 20);
+$link-color: $text-color;
 
 // base style
 
