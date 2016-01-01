@@ -8,7 +8,7 @@ $body-font-family: "proxima-nova", -apple-system, sans-serif;
 // colors
 $background-color: #fafafa;
 $text-color: #363636;
-$link-color: #fdc328;
+$link-color: lighten($text-color, 20);
 
 // base style
 
@@ -30,7 +30,6 @@ body {
 
 a, a:visited {
   color: $link-color;
-  font-weight: 600;
 }
 
 .container {
@@ -47,10 +46,6 @@ footer {
   font-size: 0.9rem;
   line-height: 0.8;
   text-align: center;
-
-  a, a:visited {
-    color: lighten($text-color, 40);
-  }
 }
 
 @media (max-width: 375px) {
