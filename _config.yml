@@ -1,5 +1,5 @@
 # Site settings
-title: David Barsky—About
+title: David Barsky
 description: "I’m David Barsky, a software developer and student."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://davidbarsky.com" # the base hostname & protocol for your site
