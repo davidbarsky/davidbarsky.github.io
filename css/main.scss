@@ -3,12 +3,12 @@
 ---
 @charset "utf-8";
 
-$body-font-family: "aktiv-grotesk", -apple-system, sans-serif;
+$body-font-family: "proxima-nova", -apple-system, sans-serif;
 
 // colors
 $background-color: #fafafa;
-$text-color: #3d464d;
-$link-color: #fd6158;
+$text-color: #363636;
+$link-color: #fdc328;
 
 // base style
 
@@ -26,6 +26,11 @@ body {
   font-size: 1.3rem;
   font-weight: 300;
   line-height: 1.3;
+}
+
+a, a:visited {
+  color: $link-color;
+  font-weight: 600;
 }
 
 .container {
@@ -54,6 +59,3 @@ footer {
   }
 }
 
-a, a:visited {
-  color: $link-color;
-}
