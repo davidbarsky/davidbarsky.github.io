@@ -3,12 +3,14 @@
 ---
 @charset "utf-8";
 
-$body-font-family: -apple-system, BlinkMacSystemFont, "Helvetica", "Roboto", sans-serif;
+$body-font-family: "proxima-nova", -apple-system, BlinkMacSystemFont, "Helvetica", "Roboto", sans-serif;
+$header-font-family: "aktiv-grotesk", $body-font-family;
 
 // colors
-$background-color: #fafafa;
-$text-color: #363636;
-$link-color: $text-color;
+$background-color: #FFFFFF;
+$header-text-color: #003046;
+$text-color: #647882;
+$link-color: #f6841e;
 
 // base style
 
@@ -26,6 +28,12 @@ body {
   font-size: 1.3rem;
   font-weight: 300;
   line-height: 1.3;
+}
+
+h1 {
+  font-family: $header-font-family;
+  color: $header-text-color;
+  font-weight: 600;
 }
 
 a, a:visited {
@@ -53,4 +61,3 @@ footer {
     font-size: 1.2rem;
   }
 }
-
