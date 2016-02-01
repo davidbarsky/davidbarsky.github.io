@@ -7,10 +7,11 @@ $body-font-family: "proxima-nova", -apple-system, BlinkMacSystemFont, "Helvetica
 $header-font-family: "aktiv-grotesk", $body-font-family;
 
 // colors
-$background-color: #FFFFFF;
-$header-text-color: #003046;
-$text-color: #647882;
-$link-color: #f6841e;
+$background-color: #fcfcfc;
+$text-color: #222222;
+$link-text-color: $background-color;
+$header-text-color: $text-color;
+$link-background-color: $text-color;
 
 // base style
 
@@ -37,7 +38,9 @@ h1 {
 }
 
 a, a:visited {
-  color: $link-color;
+  color: $link-text-color;
+  background: $link-background-color;
+  text-decoration: none;
 }
 
 .container {
@@ -50,7 +53,7 @@ article {
 }
 
 footer {
-  color: lighten($text-color, 40);
+  color: lighten($text-color, 60);
   font-size: 0.9rem;
   line-height: 0.8;
   text-align: center;
