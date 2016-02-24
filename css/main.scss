@@ -3,22 +3,21 @@
 ---
 @charset "utf-8";
 
-$body-font-family: "proxima-nova", -apple-system, BlinkMacSystemFont, "Helvetica", "Roboto", sans-serif;
-$header-font-family: "aktiv-grotesk", $body-font-family;
+$body-font-family: "fira-mono", "Consolas", -apple-system, BlinkMacSystemFont, "Helvetica", "Roboto", sans-serif;
+$header-font-family: "freight-display-pro", $body-font-family;
 
 // colors
-$background-color: #fcfcfc;
-$text-color: #222222;
-$link-text-color: $background-color;
-$header-text-color: $text-color;
-$link-background-color: $text-color;
+$background-color: #8adacd;
+$text-color: #ffffff;
 
 // base style
+
+$blue: #0071ff;
 
 body {
   color: $text-color;
   font-family: $body-font-family;
-  background-color: $background-color;
+  background: linear-gradient($blue, lighten($blue, 15));
 
   display: flex;
   min-height: 100vh;
@@ -26,21 +25,23 @@ body {
   max-width: 560px;
   margin: auto;
 
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 300;
   line-height: 1.3;
 }
 
 h1 {
+  font-size: 2.2rem;
   font-family: $header-font-family;
-  color: $header-text-color;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 1.1;
 }
 
 a, a:visited {
-  color: $link-text-color;
-  background: $link-background-color;
-  text-decoration: none;
+  // color: $link-text-color;
+  // background: darken($color, $amount);
+  // text-decoration: none;
+  color: #ffffff;
 }
 
 .container {
@@ -53,7 +54,7 @@ article {
 }
 
 footer {
-  color: lighten($text-color, 60);
+  color: lighten($text-color, 10);
   font-size: 0.9rem;
   line-height: 0.8;
   text-align: center;
