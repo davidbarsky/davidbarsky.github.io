@@ -9,9 +9,6 @@ $header-font-family: "freight-display-pro", $body-font-family;
 // colors
 $background-color: #8adacd;
 $text-color: #ffffff;
-
-// base style
-
 $blue: #0071ff;
 
 body {
@@ -38,7 +35,8 @@ a, a:visited {
 .container {
   display: flex;
   padding-top: 10vh;
-  min-height: 100vh;
+  height: 100vh;
+  // min-height: 100vh;
   flex-direction: column;
   max-width: 560px;
   margin: auto;
