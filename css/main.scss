@@ -3,19 +3,22 @@
 ---
 @charset "utf-8";
 
-$body-font-family: "jaf-bernina-sans", -apple-system, BlinkMacSystemFont, "Helvetica", "Roboto", sans-serif;
-$header-font-family: "freight-display-pro", $body-font-family;
+$body-font-family: "acumin-pro", -apple-system, BlinkMacSystemFont, "Helvetica", "Roboto", sans-serif;
+$header-font-family: "acumin-pro", "freight-display-pro", $body-font-family;
 
 // colors
-$background-color: #253338;
-$text-color: #e5dadc;
+// $background-color: #253338;
+// $text-color: #e5dadc;
+$background-color: #0f1419;
+$text-color: lighten(#3e4956, 15%);
+$link-color: lighten($text-color, 15%);
 
 body {
   color: $text-color;
   font-family: $body-font-family;
-  background: linear-gradient($background-color, #41464b);
+  background-color: $background-color;
 
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 300;
   line-height: 1.3;
 }
@@ -29,7 +32,7 @@ h1 {
 }
 
 a, a:visited {
-  color: $text-color;
+  color: $link-color;
 }
 
 .container {
@@ -43,7 +46,7 @@ a, a:visited {
 
 article {
   padding: 1em;
-  padding-top: 10vh;
+  padding-top: 15vh;
   align-self: flex-start;
 }
 
@@ -55,6 +58,9 @@ footer {
 }
 
 @media (max-width: 375px) {
+  article {
+    padding-top: 10vh;
+  }
   h1 {
     font-size: 1.8rem;
   }
