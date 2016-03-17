@@ -3,29 +3,37 @@
 ---
 @charset "utf-8";
 
-$body-font-family: "acumin-pro", -apple-system, BlinkMacSystemFont, "Helvetica", "Roboto", sans-serif;
-$header-font-family: "acumin-pro", "freight-display-pro", $body-font-family;
+$body-font-family: "freight-text-pro", "district-pro", -apple-system, BlinkMacSystemFont, "Helvetica", "Roboto", sans-serif;
+$header-font-family: "freight-display-pro", $body-font-family;
 
 // colors
-// $background-color: #253338;
-// $text-color: #e5dadc;
-$background-color: #0f1419;
-$text-color: lighten(#3e4956, 15%);
-$link-color: lighten($text-color, 15%);
+$background-color: #ffffff;
+$text-color: #531f31;
+$link-color: #ff6950;
+
+.container {
+  display: flex;
+  max-height: 100vh;
+  min-height: 100vh;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  padding: 1em;
+}
 
 body {
   color: $text-color;
   font-family: $body-font-family;
   background-color: $background-color;
 
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.3;
 }
 
 h1 {
   color: $text-color;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   font-family: $header-font-family;
   font-weight: 700;
   line-height: 1.1;
@@ -35,18 +43,8 @@ a, a:visited {
   color: $link-color;
 }
 
-.container {
-  display: flex;
-  max-height: 100vh;
-  min-height: 100vh;
-  flex-direction: column;
-  max-width: 560px;
-  margin: auto;
-}
-
 article {
-  padding: 1em;
-  padding-top: 15vh;
+  padding-top: 10vh;
   align-self: flex-start;
 }
 
@@ -59,7 +57,7 @@ footer {
 
 @media (max-width: 375px) {
   article {
-    padding-top: 10vh;
+    padding-top: 5vh;
   }
   h1 {
     font-size: 1.8rem;
