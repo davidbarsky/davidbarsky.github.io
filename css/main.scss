@@ -3,13 +3,15 @@
 ---
 @charset "utf-8";
 
-$body-font-family: "freight-text-pro", "district-pro", -apple-system, BlinkMacSystemFont, "Helvetica", "Roboto", sans-serif;
+$body-font-family: "proxima-nova", -apple-system, BlinkMacSystemFont, "Helvetica", "Roboto", sans-serif;
 $header-font-family: "freight-display-pro", $body-font-family;
 
 // colors
+$gradient-top: #253338;
+$gradient-bottom: #59555a;
 $background-color: #ffffff;
-$text-color: #531f31;
-$link-color: #ff6950;
+$text-color: #e5e5e5;
+$link-color: $text-color;
 
 .container {
   display: flex;
@@ -24,7 +26,7 @@ $link-color: #ff6950;
 body {
   color: $text-color;
   font-family: $body-font-family;
-  background-color: $background-color;
+  background: linear-gradient($gradient-top, $gradient-bottom);
 
   font-size: 1.5rem;
   font-weight: 300;
