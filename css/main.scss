@@ -8,7 +8,7 @@ $body-font-family: "Input", "Menlo", "Consolas", "Roboto Mono", BlinkMacSystemFo
 // colors
 $background-color: #1d1f21;
 $text-color: #c9cacc;
-$link-color: #f4bf75;
+$link-color: #2cd8aa;
 
 .container {
   display: flex;
@@ -51,6 +51,10 @@ ol {
 
 ol:before {
   content: "- ";
+}
+
+.lambda {
+  color: $link-color;
 }
 
 .blinking-cursor {
