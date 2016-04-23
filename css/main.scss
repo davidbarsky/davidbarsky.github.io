@@ -3,68 +3,74 @@
 ---
 @charset "utf-8";
 
-$body-font-family: -apple-system, BlinkMacSystemFont, "Helvetica", "Roboto", sans-serif;
-$header-font-family: "futura-pt", $body-font-family;
+$body-font-family: "Input", "Menlo", "Consolas", "Roboto Mono", BlinkMacSystemFont, "Helvetica", "Roboto", sans-serif;
 
 // colors
-$gradient-top: #253338;
-$gradient-bottom: #59555a;
-$background-color: #ffffff;
-$text-color: #e5e5e5;
-$link-color: $text-color;
+$background-color: #1d1f21;
+$text-color: #c9cacc;
+$link-color: #f4bf75;
 
 .container {
   display: flex;
   max-height: 100vh;
   min-height: 100vh;
   flex-direction: column;
-  max-width: 600px;
+  max-width: 500px;
   margin: auto;
-  padding: 1em;
 }
 
 body {
   color: $text-color;
   font-family: $body-font-family;
-  background: linear-gradient($gradient-top, $gradient-bottom);
+  background-color: $background-color;
 
-  font-size: 1.5rem;
+  font-size: 0.9rem;
   font-weight: 300;
   line-height: 1.3;
-}
-
-h1 {
-  color: $text-color;
-  font-size: 2.2rem;
-  font-family: $header-font-family;
-  font-weight: 700;
-  line-height: 1.1;
+  text-transform: lowercase;
 }
 
 a, a:visited {
   color: $link-color;
+  text-decoration: none;
 }
 
 article {
-  padding-top: 10vh;
+  padding-top: 15vh;
+  padding-right: 3vw;
+  padding-left: 3vw;
   align-self: flex-start;
 }
 
-footer {
-  color: lighten($text-color, 10);
-  font-size: 0.9rem;
-  line-height: 0.8;
-  text-align: center;
+ol {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0rem;
+}
+
+ol:before {
+  content: "- ";
+}
+
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 1.1rem;
+  color: $text-color;
+  animation: 1.1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: $text-color;
+  }
 }
 
 @media (max-width: 375px) {
   article {
     padding-top: 5vh;
-  }
-  h1 {
-    font-size: 1.8rem;
-  }
-  body {
-    font-size: 1.1rem;
   }
 }
