@@ -4,7 +4,10 @@ description: "i'm david barsky, a software developer and student."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://davidbarsky.com" # the base hostname & protocol for your site
 twitter_username: thramp
-github_username:  jekyll
+github_username: davidbarsky
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-seo-tag
