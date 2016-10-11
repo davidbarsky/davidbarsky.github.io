@@ -6,9 +6,9 @@
 $body-font-family: "Menlo", "Consolas", monospace;
 
 // colors
-$background-color: #1d1f21;
-$text-color: #c9cacc;
-$link-color: #2cd8aa;
+$background-color: #282828;
+$text-color: #fbf1c7;
+$link-color: #8ec07c;
 
 .container {
   display: flex;
@@ -24,7 +24,7 @@ body {
   font-family: $body-font-family;
   background-color: $background-color;
 
-  font-size: 0.9rem;
+  font-size: 0.80rem;
   font-weight: 300;
   line-height: 1.3;
   text-transform: lowercase;
