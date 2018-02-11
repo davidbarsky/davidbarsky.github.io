@@ -6,9 +6,9 @@
 $body-font-family: "Menlo", "Consolas", monospace;
 
 // colors
-$background-color: #282828;
-$text-color: #fbf1c7;
-$link-color: #8ec07c;
+$background-color: #232c31;
+$text-color: #f2f2f2;
+$link-color: #e95e34;
 
 .container {
   display: flex;
@@ -66,14 +66,14 @@ ol:before {
   animation: 1s blink step-end infinite;
 }
 
-@keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: $text-color;
-  }
-}
+// @keyframes "blink" {
+//   from, to {
+//     color: transparent;
+//   }
+//   50% {
+//     color: $text-color;
+//   }
+// }
 
 @media (max-width: 375px) {
   article {
